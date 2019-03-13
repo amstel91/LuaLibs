@@ -1,2 +1,2 @@
 # LuaLib
-A collection of String utilities for lua
+A String library for lua

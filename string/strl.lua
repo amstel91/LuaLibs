@@ -79,7 +79,6 @@ function strl.encodeBase64(data)
     end)..({ '', '==', '=' })[#data%3+1])
 end
 
--- decoding
 function strl.decodeBase64(data)
     data = string.gsub(data, '[^'..b..'=]', '')
     return (data:gsub('.', function(x)

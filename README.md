@@ -78,3 +78,75 @@ returns trims trailing whitespaces
 strl.trim("Hello   ")
 => Hello
 ```
+
+## split
+
+`strl.split(value,[seperator])`
+    
+returns a table of string split using the seperator. By default space is the seperator
+
+```lua
+strl.split("Hello World")
+=> {"Hello","World"}
+strl.split("Hello-World","-")
+=> {"Hello","World"}
+```
+
+## splitLines
+
+`strl.splitLines(value)`
+    
+returns a table of string split by line
+
+```lua
+strl.splitLines("Hello\nWorld")
+=> {"Hello","World"}
+```
+
+## startsWith
+
+`strl.startsWith(value,startsWithValue)`
+    
+returns true if the first parameter starts with the second paramter.
+
+```lua
+strl.startsWith("HelloWorld","Hello")
+=> true
+strl.startsWith("HelloWorld","World")
+=> false
+```
+
+## endsWith
+
+`strl.endsWith(value,endsWithValue)`
+    
+returns true if the first parameter ends with the second paramter.
+
+```lua
+strl.endsWith("HelloWorld","World")
+=> true
+strl.endsWith("HelloWorld","Hello")
+=> false
+```
+
+## encodeBase64
+
+`strl.encodeBase64(value)`
+    
+returns base 64 encoded string
+
+```lua
+strl.encodeBase64("test:test123")
+=> "dGVzdDp0ZXN0MTIz"
+```
+
+## decodeBase64
+
+`strl.decodeBase64(value)`
+    
+returns base 64 decoded string
+
+```lua
+strl.decodeBase64("dGVzdDp0ZXN0MTIz")
+=> "test:test123"
+```

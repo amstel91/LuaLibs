@@ -30,3 +30,51 @@ strl.isString("Hello")
 strl.isString(4)
 => false
 ```
+
+## isEmpty
+
+`strl.isEmpty(value)`
+    
+returns true if value is nil or empty string
+
+```lua
+strl.isEmpty("Hello")
+=> false
+strl.isEmpty("")
+=> true
+strl.isEmpty(nil)
+=> false
+```
+
+## trim
+
+`strl.trim(value)`
+    
+returns trims leading and trailing whitespaces
+
+```lua
+strl.trim("  Hello  ")
+=> Hello
+```
+
+## ltrim
+
+`strl.ltrim(value)`
+    
+returns trims leading whitespaces
+
+```lua
+strl.trim("  Hello")
+=> Hello
+```
+
+## rtrim
+
+`strl.rtrim(value)`
+    
+returns trims trailing whitespaces
+
+```lua
+strl.trim("Hello   ")
+=> Hello
+```

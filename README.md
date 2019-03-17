@@ -14,7 +14,9 @@ The tests are available in test folder
 
 # How to include
 
+```lua
 local strl = require "strl"
+```
 
 # String Functions
 

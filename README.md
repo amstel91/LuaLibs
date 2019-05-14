@@ -66,7 +66,7 @@ strl.trim("  Hello  ")
 returns trims leading whitespaces
 
 ```lua
-strl.trim("  Hello")
+strl.ltrim("  Hello")
 => Hello
 ```
 
@@ -77,7 +77,7 @@ strl.trim("  Hello")
 returns trims trailing whitespaces
 
 ```lua
-strl.trim("Hello   ")
+strl.rtrim("Hello   ")
 => Hello
 ```
 
